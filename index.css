@@ -20,9 +20,13 @@ html, body {
   margin-right: 10px;
   border-radius: 50%;
   cursor: pointer;
+  transition: transform 0.65s ease;
 }
 .box:last-child {
   margin-right: 0;
+}
+.box.show {
+  transform: scale(46);
 }
 .wrap {
   height: 100%;
