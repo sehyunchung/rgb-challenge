@@ -20,13 +20,13 @@ html, body {
   margin-right: 10px;
   border-radius: 50%;
   cursor: pointer;
-  transition: transform 0.65s ease;
+  transition: transform 0.5s;
 }
 .box:last-child {
   margin-right: 0;
 }
 .box.show {
-  transform: scale(46);
+  transform: scale(25);
 }
 .wrap {
   height: 100%;
@@ -51,7 +51,10 @@ html, body {
 }
 .score {
   text-align: center;
-  padding: 10px;
+  padding-top: 10px;
+}
+.rgb-text {
+  margin-bottom: 10px;
 }
 .game-center {
   flex-grow: 1;
@@ -70,6 +73,7 @@ html, body {
   display: none;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .modal.show {
   display: flex;
@@ -79,4 +83,10 @@ html, body {
   cursor: pointer;
   padding: 8px;
   border-radius: 8px;
+}
+.modal-title {
+  margin-bottom: 5px;
+}
+.modal-score {
+  margin-bottom: 8px;
 }
