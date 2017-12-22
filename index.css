@@ -7,9 +7,21 @@ html, body {
   font-family: 'Roboto Mono', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+/* boxes */
+
+.boxes {
+  display: flex;
+}
 .box {
   height: 50px;
   width: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.box:last-child {
+  margin-right: 0;
 }
 .wrap {
   height: 100%;
@@ -26,10 +38,6 @@ html, body {
   font-size: 1em;
   font-weight: normal;
   margin: 0 auto;
-}
-.heading>h1>span {
-  text-transform: uppercase;
-  font-size: 3em;
 }
 .bottom {
   flex-grow: 1;
