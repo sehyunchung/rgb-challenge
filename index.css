@@ -1,10 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:500|Montserrat:400,700);
+@font-face {
+  font-family: "Avenir";
+  src: url("../../fonts/AvenirLTStd-Book.eot");
+  src: url("../../fonts/AvenirLTStd-Book.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirLTStd-Book.woff") format("woff"), url("../../fonts/AvenirLTStd-Book.ttf") format("truetype"), url("../../fonts/AvenirLTStd-Book.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../fonts/AvenirLTStd-Medium.eot");
+  src: url("../../fonts/AvenirLTStd-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirLTStd-Medium.woff") format("woff"), url("../../fonts/AvenirLTStd-Medium.ttf") format("truetype"), url("../../fonts/AvenirLTStd-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "eventicons";
+  src: url("../../fonts/eventicons.eot");
+  src: url("../../fonts/eventicons.eot?#iefix") format("embedded-opentype"), url("../../fonts/eventicons.ttf") format("truetype"), url("../../fonts/eventicons.svg#eventicons") format("svg"), url("../../fonts/eventicons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #232323;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
   color: #ffffff;
 }
@@ -12,7 +35,10 @@ html, body {
 /* boxes */
 
 .boxes {
+  margin: 0 auto;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .box {
   height: 50px;
@@ -40,9 +66,14 @@ html, body {
   padding: 20px;
 }
 .heading>h1 {
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: normal;
   margin: 0 auto;
+  line-height: 1.1
+}
+.bigRgb {
+  margin: 0px;
+  font-size: 3.3em;
 }
 .bottom {
   flex-grow: 1;
@@ -51,10 +82,14 @@ html, body {
 }
 .score {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 .rgb-text {
-  margin-bottom: 10px;
+  text-align: center;
+  text-transform: lowercase;
+  font-family: 'Source Code Pro', Courier New, Courier, monospace;
+  font-size: 1.5em;
+  margin-bottom: 50px;
 }
 .game-center {
   flex-grow: 1;
@@ -64,6 +99,9 @@ html, body {
   justify-content: center;
   text-align: center;
 }
+
+/* modal */
+
 .modal {
   position: fixed;
   top: 0;
@@ -74,17 +112,23 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-weight: bold;
 }
 .modal.show {
   display: flex;
 }
 .modal-button {
-  border: 1px solid #ffffff;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 120px;
+  border: 1.5px solid #ffffff;
+  font-size: 1.1em;
   cursor: pointer;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 7px;
+  border-radius: 4px;
 }
 .modal-title {
+  font-size: 3em;
   margin-bottom: 5px;
 }
 .modal-score {
