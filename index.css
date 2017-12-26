@@ -128,9 +128,10 @@ html, body {
   border-radius: 4px;
 }
 .modal-title {
-  font-size: 3em;
-  margin-bottom: 5px;
+  font-size: 3.5em;
+  /* margin-bottom: 5px; */
 }
 .modal-score {
+  font-size: 1.4em;
   margin-bottom: 8px;
 }
